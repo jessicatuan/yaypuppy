@@ -5,16 +5,12 @@
 body {
     margin: 0;
     /* TODO use the Google Font 'Bitter' */
-    font-family:"Bitter";
+    font-family:"Pompiere";
     font-size: 100%;
 }
 
 div, h1, h2, h3, h4, h5, h6, p, ul, ol, a {
-   font-family: 'Bitter'; /* TODO because we are using Foundation, we have to override Foundation's default font family. Use the Google Font 'Bitter' here. */
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #fffdf0;/* TODO make the font color of all our headers #fffdf0 */
+   font-family: 'Pompiere'; /* TODO because we are using Foundation, we have to override Foundation's default font family. Use the Google Font 'Bitter' here. */
 }
 
 /* ---------------------------------------------- */
@@ -34,16 +30,20 @@ header .tagline h4 {
 }
 
 header .tagline {
-    text-align: center;/* TODO center the text */
-    background: rgba(34, 28, 18, 0.5); /* I added this transparent background bar for you. */
+    color: #000000;
+    float: left;
+    background: rgba(34, 28, 18, 0); /* I added this transparent background bar for you. */
     padding: 30px;/* TODO add some padding to give it space around the text */
     position: absolute;
-    top: 35%;
-    width: 100%;/* TODO absolutely position the tagline bar at top: 35%. add a width so that it goes all the way across. */
-    
-    /* TODO when you make the slideshow work, the tagline will get hidden. why? what line of CSS do you have to write to make it appear ABOVE the slideshow? */
 }
 
+header .contact {
+    color: #000000;
+    float: right;
+    background: rgba(34, 28, 18, 0); /* I added this transparent background bar for you. */
+    position: absolute;
+    display: inline-block;
+}
 
 
 
@@ -159,9 +159,5 @@ display: inline-block;/* TODO style these with the appropriate font styles (bold
 /* Social Media/Contact ------------------------- */
 /* ---------------------------------------------- */
 
-.contact {
-    /* TODO add the dark brown background color, and the background image symbols-bottom. Change the background-position so that the bottom of it shows (where the symbols start to fade out). */
-    /* TODO add some top and bottom padding so that the content doesn't overlap the background image. Note how the padding changes the location of the background image. */
-}
 
 /* TODO make the .social-links links be displayed in a row with some space between them. make them 50% opacity, and fade to 100% opacity when you hover over them. */
