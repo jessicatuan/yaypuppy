@@ -1,7 +1,7 @@
   
   $(document).ready(function(){
 
-  $.getJSON("items.json", function(json) {
+  $.getJSON("https:www.diypestspray.com/home3/diypests/public_html/matt_test/items.json", function(json) {
 
     for(var i in json) {
       $(".products").append("<div class=\"large-4 small-6 columns\"><img src=\"" + json[i].imgurl + "\"><div class=\"panel\"><h5>" + json[i].name + "</h5><h6 class= \"subheader item-price\"> $" + json[i].price +" </h6></div><div class=\"list-item-add\"><a href=\"#\" class=\"button\">Add to cart</a></div></div></div>");
